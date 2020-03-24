@@ -1,0 +1,19 @@
+.root {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin: 5px;
+}
+
+.item:hover {
+  background: #e8f4f6;
+}

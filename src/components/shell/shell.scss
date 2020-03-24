@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  height: 100%;
+}
+
+.header, .aside {
+  position: fixed;
+  z-index: 100;
+}
+
+.header {
+  width: 100%;
+  background: #282b33;
+  height: 65px;
+}
+
+.logo {
+  width: 80px;
+  height: 65px;
+  background: rgb(206, 1, 31);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-family: Arial;
+}
+
+.aside {
+  width: 80px;
+  box-shadow: 1px 0 20px 0 rgba(0, 0, 0, 0.1);
+  background: white;
+  height: 100%;
+  top: 65px;
+}
+
+.main {
+  margin-left: 80px;
+  margin-top: 65px;
+  padding: 20px;
+}
