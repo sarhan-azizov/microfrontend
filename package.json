@@ -5,6 +5,7 @@
   "description": "",
   "main": "./src/app.js",
   "scripts": {
+    "start:microfrontend-application-a": "cd ./packages/microfrontend-application-a && npm run start",
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack "
   },
@@ -12,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/sarhan-azizov/microfrontend-shell.git"
   },
+  "workspaces": true,
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
@@ -29,6 +31,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "css-loader": "^3.4.2",
+    "microfrontend-application-a": "file:./packages/microfrontend-application-a",
+    "microfrontend-common-ui": "file:./packages/microfrontend-common-ui",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

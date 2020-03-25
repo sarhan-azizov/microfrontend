@@ -9,8 +9,11 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'shell.js',
-        chunkFilename: '[name].shell.chunk.js',
+        filename: '[name].js',
+        chunkFilename: '[name].chunk.js',
+    },
+    devServer: {
+        port: 8000
     },
     devtool: "none",
     mode: 'development',
